@@ -16,10 +16,8 @@ License:	LGPLv3+
 Group:		Development/Other
 Url:		http://www.zeromq.org
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	glib2-devel
-BuildRequires:	libuuid-devel
-BuildRequires:	python
-
+BuildRequires:  zeromq-devel
+	
 %description
 The 0MQ lightweight messaging kernel is a library which extends the
 standard socket interfaces with features traditionally provided by
