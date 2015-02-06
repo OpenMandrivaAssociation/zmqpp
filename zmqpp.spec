@@ -1,6 +1,6 @@
 %define name	zmqpp
 %define version	2.1.0
-%define release 2
+%define release 3
 %define debug_package          %{nil}
 
 %define libname_orig lib%{name} 
