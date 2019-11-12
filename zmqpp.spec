@@ -84,4 +84,6 @@ mkdir -p %{buildroot}%{_libdir}
 %defattr(-,root,root)
 %{_libdir}/lib%{name}.so
 %{_includedir}/%{name}
+%{_libdir}//libzmqpp.a
+%{_libdir}//pkgconfig/libzmqpp.pc
 
