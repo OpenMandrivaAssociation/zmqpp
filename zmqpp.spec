@@ -1,10 +1,10 @@
 %define name	zmqpp
-%define version	2.1.0
-%define release 3
+%define version	4.2.0
+%define release 1
 %define debug_package          %{nil}
 
 %define libname_orig lib%{name} 
-%define major	2
+%define major	4
 %define libname	%mklibname %{name} %{major}
 %define develname %mklibname %{name} -d
 
@@ -12,7 +12,7 @@ Summary:	Software library for fast, message-based applications
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	http://download.zeromq.org/%{name}-%{version}.tar.gz
+Source0:	https://github.com/zeromq/zmqpp/archive/%{version}/%{name}-%{version}.tar.gz
 License:	LGPLv3+
 Group:		Development/Other
 Url:		http://www.zeromq.org
@@ -65,7 +65,7 @@ applications that use %{name}.
 %setup -q 
 
 %build
-%make PREFIX=/usr 
+%make_build PREFIX=/usr 
 
 %install
 %__rm -rf %{buildroot}
@@ -84,4 +84,6 @@ mkdir -p %{buildroot}%{_libdir}
 %defattr(-,root,root)
 %{_libdir}/lib%{name}.so
 %{_includedir}/%{name}
+%{_libdir}//libzmqpp.a
+%{_libdir}//pkgconfig/libzmqpp.pc
 
