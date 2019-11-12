@@ -4,7 +4,7 @@
 %define debug_package          %{nil}
 
 %define libname_orig lib%{name} 
-%define major	2
+%define major	4
 %define libname	%mklibname %{name} %{major}
 %define develname %mklibname %{name} -d
 
@@ -65,7 +65,7 @@ applications that use %{name}.
 %setup -q 
 
 %build
-%make PREFIX=/usr 
+%make_build PREFIX=/usr 
 
 %install
 %__rm -rf %{buildroot}
