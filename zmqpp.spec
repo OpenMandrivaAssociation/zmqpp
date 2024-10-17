@@ -15,7 +15,7 @@ Release:	%{release}
 Source0:	https://github.com/zeromq/zmqpp/archive/%{version}/%{name}-%{version}.tar.gz
 License:	LGPLv3+
 Group:		Development/Other
-Url:		http://www.zeromq.org
+Url:		https://www.zeromq.org
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  zeromq-devel
 	
