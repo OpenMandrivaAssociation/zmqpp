@@ -17,6 +17,7 @@ License:	LGPLv3+
 Group:		Development/Other
 Url:		https://www.zeromq.org
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	make
 BuildRequires:  zeromq-devel
 	
 %description
